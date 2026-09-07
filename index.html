@@ -11,6 +11,7 @@
   <title>PaleoSecrets | Dinosaurios, historia y recursos</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="enhancements.css">
+  <link rel="stylesheet" href="expedition.css">
 </head>
 <body>
   <header class="site-header">
@@ -25,17 +26,17 @@
     <section class="hero">
       <div class="hero-shade"></div>
       <div class="wrap hero-content">
-        <p class="kicker">LA COMUNIDAD PALEO DE +31 MIL SEGUIDORES</p>
-        <h1>El pasado todavía guarda <span>secretos.</span></h1>
-        <p class="hero-copy">Historias increíbles, especies fascinantes y recursos gratuitos para explorar el mundo de los dinosaurios.</p>
-        <div class="hero-actions"><a class="button gold" href="#recursos">Explorar recursos gratis</a><a class="button ghost" href="https://www.facebook.com/PaleoSecretos/" target="_blank" rel="noopener">Seguir en Facebook</a></div>
+        <p class="kicker">VIAJÁ MILLONES DE AÑOS ATRÁS</p>
+        <h1>Descubrí los <span>secretos</span> de los dinosaurios</h1>
+        <p class="hero-copy">Explorá especies increíbles, sus hábitats y la historia de la vida prehistórica con una comunidad de más de 31 mil seguidores.</p>
+        <div class="hero-actions"><a class="button gold" href="#especies">Comenzar la expedición</a><a class="button ghost" href="#recursos">Recursos gratuitos</a></div>
         <div class="hero-facts"><div><strong>66 M</strong><span>años atrás</span></div><div><strong>2.5 M</strong><span>años de dominio</span></div><div><strong>∞</strong><span>misterios por descubrir</span></div></div>
       </div>
       <a class="scroll" href="#especies" aria-label="Bajar a especies">↓</a>
     </section>
 
     <section class="section wrap" id="especies">
-      <div class="section-heading"><div><p class="eyebrow">ARCHIVO DE ESPECIES</p><h2>Conocé a los gigantes</h2></div><p>Fichas claras y visuales para aprender cuándo vivieron, qué comían y qué los hacía únicos.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">DINOSAURIOS DESTACADOS</p><h2>Conocé a los gigantes que dominaron la Tierra</h2></div><p>Explorá fichas visuales con su dieta, tamaño, período y los rasgos que los hicieron únicos.</p></div>
       <div class="species-filters" aria-label="Filtrar especies"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="carnivoro">Carnívoros</button><button class="filter" data-filter="herbivoro">Herbívoros</button><button class="filter" data-filter="volador">Voladores</button></div>
       <div class="species-grid">
         <article class="species-card rex" data-kind="carnivoro"><div class="card-number">01</div><div class="era">CRETÁCICO</div><div class="dino-icon">🦖</div><h3>Tyrannosaurus rex</h3><p>El depredador más famoso de Norteamérica.</p><div class="quick-facts"><span>Carnívoro</span><span>12 m</span></div><button class="text-link" data-open="rex">Abrir expediente →</button></article>
@@ -75,6 +76,6 @@
   </main>
 
   <dialog id="species-modal"><button class="modal-close" aria-label="Cerrar">×</button><p class="eyebrow" id="modal-era"></p><h2 id="modal-title"></h2><p id="modal-copy"></p><div class="modal-facts" id="modal-facts"></div></dialog>
-  <footer><div class="wrap footer-inner"><a class="logo" href="#inicio"><img class="logo-image" src="assets/paleosecrets-logo-original.jpg" alt="" width="72" height="72"><span>PALEO <em>SECRETS</em></span></a><p>Contenido educativo y de divulgación. © 2026 Paleo Secrets.</p></div></footer>
+  <footer><div class="wrap footer-inner footer-grid"><div><a class="logo" href="#inicio"><img class="logo-image" src="assets/paleosecrets-logo-original.jpg" alt="" width="72" height="72"><span>PALEO <em>SECRETS</em></span></a><p>Explorá el pasado. Descubrí la vida.</p></div><div><strong>EXPLORAR</strong><a href="#especies">Dinosaurios</a><a href="#habitats">Hábitats</a><a href="#eras">Eras</a></div><div><strong>RECURSOS</strong><a href="#recursos">Kit Paleo</a><a href="#historias">Historias</a><a href="#club">Club Paleo</a></div><div><strong>COMUNIDAD</strong><a href="https://www.facebook.com/PaleoSecretos/" target="_blank" rel="noopener">Facebook</a><span>+31 mil seguidores</span></div></div><div class="wrap footer-bottom">© 2026 Paleo Secrets · Contenido educativo y de divulgación.</div></footer>
   <script src="app.js"></script>
 </body></html>
