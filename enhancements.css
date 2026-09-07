@@ -21,9 +21,3 @@ body{background:#fffaf0;color:#21352c}
 footer{background:#176b4e;border-top:0}.footer-inner{color:#e8fff1}
 @media(max-width:850px){.hero-shade{background:#164638a8}.hero-content{text-shadow:0 2px 10px #17372d99}}
 @media(max-width:580px){.form-row input,.form-row .button{border-radius:14px}}
-
-/* Movimiento sutil en títulos */
-.hero h1,.section-heading h2,.species-card h3,.era-grid h3,.habitat-grid h3,.resource h3,.story-grid h3,.club h2{transition:color .28s ease,transform .28s ease,text-shadow .28s ease;transform-origin:left center}
-.hero h1:hover,.section-heading h2:hover,.species-card h3:hover,.era-grid h3:hover,.habitat-grid h3:hover,.resource h3:hover,.story-grid h3:hover,.club h2:hover{color:#e5aa2d;transform:scale(1.018);text-shadow:0 3px 16px #e5aa2d2e}
-.hero h1:hover span{color:#fff3b6}
-@media(prefers-reduced-motion:reduce){.hero h1,.section-heading h2,.species-card h3,.era-grid h3,.habitat-grid h3,.resource h3,.story-grid h3,.club h2{transition:none}.hero h1:hover,.section-heading h2:hover,.species-card h3:hover,.era-grid h3:hover,.habitat-grid h3:hover,.resource h3:hover,.story-grid h3:hover,.club h2:hover{transform:none}}
