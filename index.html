@@ -10,13 +10,14 @@
   <meta property="og:image" content="/assets/hero-trex.png">
   <title>PaleoSecrets | Dinosaurios, historia y recursos</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav wrap" aria-label="Navegación principal">
       <a class="logo" href="#inicio" aria-label="Paleo Secrets inicio"><img class="logo-image" src="assets/paleosecrets-logo-original.jpg" alt="" width="72" height="72"><span>PALEO <em>SECRETS</em></span></a>
       <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
-      <div class="nav-links" id="nav-links"><a href="#especies">Especies</a><a href="#recursos">Recursos</a><a href="#historias">Historias</a><a class="nav-cta" href="#club">Unirme al club</a></div>
+      <div class="nav-links" id="nav-links"><a href="#especies">Especies</a><a href="#eras">Eras</a><a href="#habitats">Hábitats</a><a href="#recursos">Recursos</a><a class="nav-cta" href="#club">Unirme al club</a></div>
     </nav>
   </header>
 
@@ -35,19 +36,33 @@
 
     <section class="section wrap" id="especies">
       <div class="section-heading"><div><p class="eyebrow">ARCHIVO DE ESPECIES</p><h2>Conocé a los gigantes</h2></div><p>Fichas claras y visuales para aprender cuándo vivieron, qué comían y qué los hacía únicos.</p></div>
+      <div class="species-filters" aria-label="Filtrar especies"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="carnivoro">Carnívoros</button><button class="filter" data-filter="herbivoro">Herbívoros</button><button class="filter" data-filter="volador">Voladores</button></div>
       <div class="species-grid">
-        <article class="species-card rex"><div class="era">CRETÁCICO</div><div class="dino-icon">🦖</div><h3>Tyrannosaurus rex</h3><p>El depredador más famoso de Norteamérica.</p><button class="text-link" data-open="rex">Abrir expediente →</button></article>
-        <article class="species-card tri"><div class="era">CRETÁCICO</div><div class="dino-icon">🦕</div><h3>Triceratops</h3><p>Tres cuernos, un gran volante y una defensa formidable.</p><button class="text-link" data-open="tri">Abrir expediente →</button></article>
-        <article class="species-card raptor"><div class="era">CRETÁCICO</div><div class="dino-icon">🦎</div><h3>Velociraptor</h3><p>Pequeño, emplumado y mucho más ágil que enorme.</p><button class="text-link" data-open="raptor">Abrir expediente →</button></article>
+        <article class="species-card rex" data-kind="carnivoro"><div class="card-number">01</div><div class="era">CRETÁCICO</div><div class="dino-icon">🦖</div><h3>Tyrannosaurus rex</h3><p>El depredador más famoso de Norteamérica.</p><div class="quick-facts"><span>Carnívoro</span><span>12 m</span></div><button class="text-link" data-open="rex">Abrir expediente →</button></article>
+        <article class="species-card tri" data-kind="herbivoro"><div class="card-number">02</div><div class="era">CRETÁCICO</div><div class="dino-icon">🦕</div><h3>Triceratops</h3><p>Tres cuernos, un gran volante y una defensa formidable.</p><div class="quick-facts"><span>Herbívoro</span><span>9 m</span></div><button class="text-link" data-open="tri">Abrir expediente →</button></article>
+        <article class="species-card raptor" data-kind="carnivoro"><div class="card-number">03</div><div class="era">CRETÁCICO</div><div class="dino-icon">🦎</div><h3>Velociraptor</h3><p>Pequeño, emplumado y mucho más ágil que enorme.</p><div class="quick-facts"><span>Carnívoro</span><span>2 m</span></div><button class="text-link" data-open="raptor">Abrir expediente →</button></article>
+        <article class="species-card" data-kind="carnivoro"><div class="card-number">04</div><div class="era">CRETÁCICO</div><div class="dino-icon">🐊</div><h3>Spinosaurus</h3><p>Un cazador semiacuático con una enorme vela dorsal.</p><div class="quick-facts"><span>Piscívoro</span><span>15 m</span></div><button class="text-link" data-open="spino">Abrir expediente →</button></article>
+        <article class="species-card" data-kind="herbivoro"><div class="card-number">05</div><div class="era">JURÁSICO</div><div class="dino-icon">🦕</div><h3>Brachiosaurus</h3><p>Un gigante de cuello alto que alcanzaba las copas.</p><div class="quick-facts"><span>Herbívoro</span><span>25 m</span></div><button class="text-link" data-open="brachio">Abrir expediente →</button></article>
+        <article class="species-card" data-kind="volador"><div class="card-number">06</div><div class="era">CRETÁCICO</div><div class="dino-icon">🪽</div><h3>Pteranodon</h3><p>Un gran reptil volador que dominaba las costas.</p><div class="quick-facts"><span>Piscívoro</span><span>7 m alas</span></div><button class="text-link" data-open="ptera">Abrir expediente →</button></article>
       </div>
     </section>
+
+    <section class="explore-section" id="eras"><div class="wrap section">
+      <div class="section-heading light"><div><p class="eyebrow">VIAJE EN EL TIEMPO</p><h2>Tres mundos, millones de años</h2></div><p>Recorré las grandes eras y descubrí cómo cambió la vida en la Tierra.</p></div>
+      <div class="era-grid"><article><strong>252–201 Ma</strong><h3>Triásico</h3><p>El comienzo. Aparecen los primeros dinosaurios en un planeta extremo.</p></article><article><strong>201–145 Ma</strong><h3>Jurásico</h3><p>La era de los gigantes, las grandes selvas y las primeras aves.</p></article><article><strong>145–66 Ma</strong><h3>Cretácico</h3><p>Máxima diversidad y el acontecimiento que cambió la vida para siempre.</p></article></div>
+      <div class="timeline" aria-label="Línea temporal"><span>252 Ma</span><i></i><span>201 Ma</span><i></i><span>145 Ma</span><i></i><span>66 Ma</span></div>
+    </div></section>
+
+    <section class="section wrap" id="habitats"><div class="section-heading"><div><p class="eyebrow">HÁBITATS PREHISTÓRICOS</p><h2>Los mundos que habitaron</h2></div><p>No todos vivían en la selva: cada ambiente impulsó adaptaciones diferentes.</p></div><div class="habitat-grid"><article class="forest"><span>01</span><h3>Bosques</h3><p>Vegetación densa, clima húmedo y alimento abundante.</p></article><article class="ocean"><span>02</span><h3>Océanos</h3><p>Mares dominados por reptiles marinos, no dinosaurios.</p></article><article class="desert"><span>03</span><h3>Desiertos</h3><p>Temperaturas extremas y supervivencia especializada.</p></article><article class="coast"><span>04</span><h3>Costas</h3><p>El territorio de grandes voladores y cazadores de peces.</p></article></div></section>
+
+    <section class="trust-strip"><div class="wrap"><div><b>✓</b><span><strong>Información contrastada</strong>Basada en evidencia paleontológica.</span></div><div><b>⌕</b><span><strong>Fósiles y contexto</strong>Explicamos qué sabemos y cómo.</span></div><div><b>◎</b><span><strong>Contenido visual</strong>Aprender de forma clara y entretenida.</span></div></div></section>
 
     <section class="dark-section" id="recursos"><div class="wrap section">
       <div class="section-heading light"><div><p class="eyebrow">BIBLIOTECA GRATUITA</p><h2>Aprendé, jugá y creá</h2></div><p>Material pensado para familias, docentes y fanáticos de todas las edades.</p></div>
       <div class="resource-grid">
-        <article class="resource featured"><span class="resource-type">PRÓXIMAMENTE · EBOOK</span><div class="cover"><span>PALEO<br>SECRETS</span><small>10 gigantes del pasado</small></div><div><h3>Guía de dinosaurios para exploradores</h3><p>Una introducción visual con datos, tamaños y curiosidades.</p><button class="button gold resource-btn" data-resource="ebook">Avisame cuando esté listo</button></div></article>
-        <article class="resource"><span class="resource-type">PRÓXIMAMENTE · PDF</span><div class="resource-visual lineart">✎</div><h3>Dinosaurios para colorear</h3><p>Láminas imprimibles con nombres y datos sencillos.</p><button class="text-link resource-btn" data-resource="colorear">Quiero este recurso →</button></article>
-        <article class="resource"><span class="resource-type">PRÓXIMAMENTE · 3D</span><div class="resource-visual cube">◇</div><h3>Galería prehistórica 3D</h3><p>Imágenes para fondos, publicaciones y actividades educativas.</p><button class="text-link resource-btn" data-resource="3d">Quiero este recurso →</button></article>
+        <article class="resource featured"><span class="resource-type">GRATIS · KIT IMPRIMIBLE</span><div class="cover"><span>KIT<br>PALEO</span><small>3 recursos en un solo PDF</small></div><div><h3>Kit Paleo para pequeños exploradores</h3><p>12 láminas para colorear, 20 fichas coleccionables y un póster de la línea del tiempo.</p><ul class="resource-list"><li>Listo para imprimir</li><li>Ideal para aprender jugando</li><li>Contenido en español</li></ul><button class="button gold resource-btn" data-resource="kit-paleo">Quiero el Kit Paleo gratis</button></div></article>
+        <article class="resource"><span class="resource-type">PRÓXIMO REGALO · DIGITAL</span><div class="resource-visual lineart">▣</div><h3>Fondos prehistóricos</h3><p>Imágenes de dinosaurios para personalizar celular y computadora.</p><button class="text-link resource-btn" data-resource="fondos">Avisame cuando estén →</button></article>
+        <article class="resource"><span class="resource-type">PRÓXIMAMENTE · INTERACTIVO</span><div class="resource-visual cube">◇</div><h3>Quiz con diploma Paleo</h3><p>Preguntas, curiosidades y un certificado para verdaderos exploradores.</p><button class="text-link resource-btn" data-resource="quiz">Quiero participar →</button></article>
       </div>
     </div></section>
 
@@ -56,7 +71,7 @@
       <div class="story-grid"><article><span>01</span><h3>¿El T. rex realmente podía correr?</h3><p>Lo que la biomecánica moderna nos cuenta sobre sus movimientos.</p></article><article><span>02</span><h3>Los errores de Jurassic Park</h3><p>Ciencia, cine y las licencias que cambiaron nuestra imagen del pasado.</p></article><article><span>03</span><h3>El día que cambió la Tierra</h3><p>Qué ocurrió después del impacto y cómo sobrevivieron algunas especies.</p></article></div>
     </section>
 
-    <section class="club" id="club"><div class="wrap club-inner"><div><p class="eyebrow">CLUB PALEOSECRETS</p><h2>Recibí el próximo descubrimiento.</h2><p>Recursos gratuitos, nuevas historias y recomendaciones cuidadosamente elegidas. Sin spam.</p></div><form id="lead-form"><label class="sr-only" for="lead-email">Tu email</label><div class="form-row"><input id="lead-email" type="email" placeholder="Tu mejor email" autocomplete="email" required><button class="button gold" type="submit">Unirme gratis</button></div><label class="consent"><input id="consent" type="checkbox" required> Acepto recibir novedades de PaleoSecrets. Podré darme de baja cuando quiera.</label><p class="form-status" id="form-status"></p></form></div></section>
+    <section class="club" id="club"><div class="wrap club-inner"><div><p class="eyebrow">REGALO DE BIENVENIDA</p><h2>Recibí el Kit Paleo gratis.</h2><p>Coloreables, fichas coleccionables y un póster de las eras. Además, nuevas historias y recursos ocasionales. Sin spam.</p></div><form id="lead-form"><label class="sr-only" for="lead-email">Tu email</label><div class="form-row"><input id="lead-email" type="email" placeholder="¿A qué email te lo enviamos?" autocomplete="email" required><button class="button gold" type="submit">Recibir mi kit</button></div><label class="consent"><input id="consent" type="checkbox" required> Acepto recibir novedades de PaleoSecrets. Podré darme de baja cuando quiera.</label><p class="form-status" id="form-status"></p></form></div></section>
   </main>
 
   <dialog id="species-modal"><button class="modal-close" aria-label="Cerrar">×</button><p class="eyebrow" id="modal-era"></p><h2 id="modal-title"></h2><p id="modal-copy"></p><div class="modal-facts" id="modal-facts"></div></dialog>
