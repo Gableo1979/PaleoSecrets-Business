@@ -2,3 +2,22 @@
 .resource-list{margin:18px 0 25px;padding:0;display:grid;gap:8px;list-style:none;color:#c6c9bf;font-size:13px}.resource-list li:before{content:"✓";margin-right:9px;color:var(--gold2);font-weight:900}
 @media(max-width:900px){.hero{background-position:62% 35px}.era-grid{grid-template-columns:1fr}.era-grid article{min-height:210px}.habitat-grid{grid-template-columns:1fr 1fr}.trust-strip>.wrap{grid-template-columns:1fr}.timeline{overflow-x:auto;min-height:45px}.nav-links{gap:16px}}
 @media(max-width:580px){.habitat-grid{grid-template-columns:1fr}.species-filters{display:grid;grid-template-columns:1fr 1fr}.filter{width:100%}.timeline span{white-space:nowrap}.logo-image{width:58px;height:58px}.nav{min-height:76px}}
+
+/* Identidad luminosa y familiar */
+body{background:#fffaf0;color:#21352c}
+.site-header{border-bottom:1px solid #ffffff70;background:#176b4ee8;box-shadow:0 5px 20px #174f3b22}
+.logo em{color:#ffe47a}.nav-links{color:#f5fff9}.nav-links a:hover{color:#ffe47a}.nav-cta{border-color:#ffe47a;background:#ffffff14;border-radius:12px}
+.hero{min-height:94vh}
+.hero-shade{background:linear-gradient(90deg,#123e32d9 0%,#174735a8 38%,#1b4f5430 70%,#12362b38),linear-gradient(0deg,#183e32a8 0%,transparent 37%)}
+.hero h1{text-shadow:0 4px 20px #10261d88}.hero h1 span,.hero-facts strong,.kicker{color:#ffe36c}.hero-copy{color:#f5fff9;text-shadow:0 2px 8px #10261daa}
+.gold{color:#253322;background:linear-gradient(120deg,#ffd34f,#ffe997);border-radius:14px;box-shadow:0 12px 26px #d29f2840}.ghost{border-color:#ffffffcc;background:#ffffff20;border-radius:14px}.hero-facts span{color:#e7fff2}
+.section{padding-block:92px}.section-heading h2,.club h2{color:#174f3b}.section-heading>p{color:#617469}.eyebrow{color:#e08a27}
+.species-card{border:1px solid #d6eadb;background:linear-gradient(145deg,#ffffff,#edf9ef);border-radius:24px;box-shadow:0 12px 30px #315c3c12}.species-card:before{background:radial-gradient(circle at 75% 20%,#ffe08166,transparent 42%)}.species-card:hover{box-shadow:0 20px 40px #315c3c22}.species-card p{color:#607168}.quick-facts span{border-color:#b9d9c1;color:#416151;background:#fff;border-radius:999px}.filter{border-color:#aad2b5;color:#286046;background:#fff;border-radius:999px}.filter:hover,.filter.active{border-color:#f2ba35;color:#31402c;background:#ffe175}
+.explore-section{color:#173d32;background:linear-gradient(150deg,#dff7ec 0%,#e9f7ff 55%,#fff7d7 100%)}.section-heading.light>p{color:#597269}.explore-section .section-heading h2{color:#174f3b}.era-grid article{border:1px solid #bcdcca;background:#ffffffc7;border-radius:24px;box-shadow:0 12px 30px #285b3b12}.era-grid article:hover{border-color:#e8b33b}.era-grid strong{color:#da8123}.era-grid p{color:#607168}.timeline{color:#345f50}.timeline i{background:linear-gradient(90deg,#f2bd43,#42a879)}
+.habitat-grid article{border-radius:24px;box-shadow:0 14px 28px #284b3820}.trust-strip{color:#22463a;background:#fff1bd;border-color:#f1d46b}.trust-strip b{border-color:#e5a62b;color:#cf7d20;background:#fff}.trust-strip span{color:#65756c}.trust-strip strong{color:#234d3e}
+.dark-section{color:#1d493a;background:linear-gradient(150deg,#e2f7eb,#fff8dc)}.dark-section .section-heading h2,.resource h3{color:#194b3a}.section-heading.light>p{color:#607168}.resource{border:1px solid #c9e2d0;background:#ffffffd9;border-radius:24px;box-shadow:0 14px 32px #2b5c3b13}.resource p,.resource-list{color:#65776d}.resource-visual{color:#e59229;border-color:#c5ddcc;background:#f5fff7;border-radius:16px}.cover{border-radius:18px;background:linear-gradient(145deg,#2f8b62,#155842);border-color:#f5c84f;box-shadow:10px 12px 0 #f2bf4f55}.resource-type{color:#d47c20}
+.story-grid article{border-top:0;border-radius:22px;background:#fff;box-shadow:0 12px 28px #315c3c12}.story-grid span{color:#e09627}
+.club{color:#21483b;background:linear-gradient(120deg,#ffeaa0,#d9f4e6)}.club h2{color:#174f3b}.club p{color:#526d60}.form-row input{border-color:#9bc4a9;color:#23463a;background:#fff;border-radius:14px 0 0 14px}.form-row .button{border-radius:0 14px 14px 0}.consent{color:#536f62}.form-status{color:#126443!important}
+footer{background:#176b4e;border-top:0}.footer-inner{color:#e8fff1}
+@media(max-width:850px){.hero-shade{background:#164638a8}.hero-content{text-shadow:0 2px 10px #17372d99}}
+@media(max-width:580px){.form-row input,.form-row .button{border-radius:14px}}
