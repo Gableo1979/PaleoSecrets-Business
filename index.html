@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a08">
+  <meta name="description" content="Descubrí dinosaurios, descargá recursos educativos y explorá el mundo prehistórico con PaleoSecrets.">
+  <meta property="og:title" content="PaleoSecrets | El pasado todavía tiene secretos">
+  <meta property="og:description" content="Historias, fichas, ebooks y recursos gratuitos sobre dinosaurios.">
+  <meta property="og:image" content="/assets/hero-trex.png">
+  <title>PaleoSecrets | Dinosaurios, historia y recursos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Paleo Secrets inicio"><span class="logo-mark">PS</span><span>PALEO <em>SECRETS</em></span></a>
+      <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links" id="nav-links"><a href="#especies">Especies</a><a href="#recursos">Recursos</a><a href="#historias">Historias</a><a class="nav-cta" href="#club">Unirme al club</a></div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="wrap hero-content">
+        <p class="kicker">LA COMUNIDAD PALEO DE +31 MIL SEGUIDORES</p>
+        <h1>El pasado todavía guarda <span>secretos.</span></h1>
+        <p class="hero-copy">Historias increíbles, especies fascinantes y recursos gratuitos para explorar el mundo de los dinosaurios.</p>
+        <div class="hero-actions"><a class="button gold" href="#recursos">Explorar recursos gratis</a><a class="button ghost" href="https://www.facebook.com/PaleoSecretos/" target="_blank" rel="noopener">Seguir en Facebook</a></div>
+        <div class="hero-facts"><div><strong>66 M</strong><span>años atrás</span></div><div><strong>2.5 M</strong><span>años de dominio</span></div><div><strong>∞</strong><span>misterios por descubrir</span></div></div>
+      </div>
+      <a class="scroll" href="#especies" aria-label="Bajar a especies">↓</a>
+    </section>
+
+    <section class="section wrap" id="especies">
+      <div class="section-heading"><div><p class="eyebrow">ARCHIVO DE ESPECIES</p><h2>Conocé a los gigantes</h2></div><p>Fichas claras y visuales para aprender cuándo vivieron, qué comían y qué los hacía únicos.</p></div>
+      <div class="species-grid">
+        <article class="species-card rex"><div class="era">CRETÁCICO</div><div class="dino-icon">🦖</div><h3>Tyrannosaurus rex</h3><p>El depredador más famoso de Norteamérica.</p><button class="text-link" data-open="rex">Abrir expediente →</button></article>
+        <article class="species-card tri"><div class="era">CRETÁCICO</div><div class="dino-icon">🦕</div><h3>Triceratops</h3><p>Tres cuernos, un gran volante y una defensa formidable.</p><button class="text-link" data-open="tri">Abrir expediente →</button></article>
+        <article class="species-card raptor"><div class="era">CRETÁCICO</div><div class="dino-icon">🦎</div><h3>Velociraptor</h3><p>Pequeño, emplumado y mucho más ágil que enorme.</p><button class="text-link" data-open="raptor">Abrir expediente →</button></article>
+      </div>
+    </section>
+
+    <section class="dark-section" id="recursos"><div class="wrap section">
+      <div class="section-heading light"><div><p class="eyebrow">BIBLIOTECA GRATUITA</p><h2>Aprendé, jugá y creá</h2></div><p>Material pensado para familias, docentes y fanáticos de todas las edades.</p></div>
+      <div class="resource-grid">
+        <article class="resource featured"><span class="resource-type">PRÓXIMAMENTE · EBOOK</span><div class="cover"><span>PALEO<br>SECRETS</span><small>10 gigantes del pasado</small></div><div><h3>Guía de dinosaurios para exploradores</h3><p>Una introducción visual con datos, tamaños y curiosidades.</p><button class="button gold resource-btn" data-resource="ebook">Avisame cuando esté listo</button></div></article>
+        <article class="resource"><span class="resource-type">PRÓXIMAMENTE · PDF</span><div class="resource-visual lineart">✎</div><h3>Dinosaurios para colorear</h3><p>Láminas imprimibles con nombres y datos sencillos.</p><button class="text-link resource-btn" data-resource="colorear">Quiero este recurso →</button></article>
+        <article class="resource"><span class="resource-type">PRÓXIMAMENTE · 3D</span><div class="resource-visual cube">◇</div><h3>Galería prehistórica 3D</h3><p>Imágenes para fondos, publicaciones y actividades educativas.</p><button class="text-link resource-btn" data-resource="3d">Quiero este recurso →</button></article>
+      </div>
+    </div></section>
+
+    <section class="section wrap" id="historias">
+      <div class="section-heading"><div><p class="eyebrow">DEL CANAL AL ARCHIVO</p><h2>Historias para mirar distinto</h2></div></div>
+      <div class="story-grid"><article><span>01</span><h3>¿El T. rex realmente podía correr?</h3><p>Lo que la biomecánica moderna nos cuenta sobre sus movimientos.</p></article><article><span>02</span><h3>Los errores de Jurassic Park</h3><p>Ciencia, cine y las licencias que cambiaron nuestra imagen del pasado.</p></article><article><span>03</span><h3>El día que cambió la Tierra</h3><p>Qué ocurrió después del impacto y cómo sobrevivieron algunas especies.</p></article></div>
+    </section>
+
+    <section class="club" id="club"><div class="wrap club-inner"><div><p class="eyebrow">CLUB PALEOSECRETS</p><h2>Recibí el próximo descubrimiento.</h2><p>Recursos gratuitos, nuevas historias y recomendaciones cuidadosamente elegidas. Sin spam.</p></div><form id="lead-form"><label class="sr-only" for="lead-email">Tu email</label><div class="form-row"><input id="lead-email" type="email" placeholder="Tu mejor email" autocomplete="email" required><button class="button gold" type="submit">Unirme gratis</button></div><label class="consent"><input id="consent" type="checkbox" required> Acepto recibir novedades de PaleoSecrets. Podré darme de baja cuando quiera.</label><p class="form-status" id="form-status"></p></form></div></section>
+  </main>
+
+  <dialog id="species-modal"><button class="modal-close" aria-label="Cerrar">×</button><p class="eyebrow" id="modal-era"></p><h2 id="modal-title"></h2><p id="modal-copy"></p><div class="modal-facts" id="modal-facts"></div></dialog>
+  <footer><div class="wrap footer-inner"><a class="logo" href="#inicio"><span class="logo-mark">PS</span><span>PALEO <em>SECRETS</em></span></a><p>Contenido educativo y de divulgación. © 2026 Paleo Secrets.</p></div></footer>
+  <script src="app.js"></script>
+</body></html>
