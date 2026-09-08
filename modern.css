@@ -47,10 +47,10 @@ body{
 .nav-links a{color:#426277}
 .nav-links a:hover{color:#087f72}
 .nav-cta{color:#16334a!important;background:linear-gradient(120deg,#f4cf59,#ffe89a);border:0;box-shadow:0 8px 20px #d8a72c35}
-.hero{min-height:700px;background:#dff4f4 url('assets/hero-trex.png') center/cover no-repeat;overflow:hidden}
+.hero{min-height:700px;background:#151515;overflow:hidden}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;pointer-events:none}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:150px;background:linear-gradient(transparent,#f8fcfa);z-index:1;pointer-events:none}
-.hero-shade{background:linear-gradient(90deg,#073e3bbd 0%,#08776e6e 42%,#dff8f000 75%),linear-gradient(0deg,#123e3c4a,transparent 55%)}
+.hero-shade{background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.5) 43%,rgba(0,0,0,.08) 78%),linear-gradient(0deg,rgba(0,0,0,.35),transparent 55%)}
 .hero-content{position:relative;z-index:2}
 .hero h1{max-width:690px;font-size:clamp(2.7rem,5.4vw,5rem);line-height:1;letter-spacing:-.045em;text-wrap:balance;text-shadow:0 8px 28px #062f3224}
 .hero h1 span{color:#f4cf59}
@@ -109,5 +109,5 @@ footer{background:linear-gradient(135deg,#073f3d,#0b7468)}
   .species-grid{grid-template-columns:repeat(2,1fr)}.species-card{min-height:0}
   .section{padding-top:70px;padding-bottom:70px}.club{border-radius:24px;margin:0 14px 50px}
 }
-@media(prefers-reduced-motion:reduce){.hero-video{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-video{animation:none}}
 @media(max-width:580px){.species-grid{grid-template-columns:1fr}.species-card{min-height:0}}
