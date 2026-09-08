@@ -31,8 +31,16 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
 .hero-content{position:relative;z-index:2;padding-block:70px 100px}
 .kicker,.eyebrow{color:var(--coral);font-size:11px;font-weight:900;letter-spacing:.19em}
 .hero .kicker{color:#ffe17b}
-.hero h1{max-width:880px;margin:20px 0;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(1.62rem,3.21vw,3.09rem);font-weight:900;line-height:.94;letter-spacing:.012em;text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 16px rgba(0,0,0,.42)}
-.hero h1 span{display:block;color:var(--gold);font-style:normal}
+.hero h1{max-width:880px;margin:20px 0;font-family:"Oswald","Arial Narrow",sans-serif;font-size:clamp(1.72rem,3.4vw,3.25rem);font-weight:600;line-height:.96;letter-spacing:.018em;text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 16px rgba(0,0,0,.42)}
+.hero-title-row{display:block;color:#fff}
+.hero-title-word{display:inline-block;color:inherit;font-style:normal;transform-origin:center;will-change:transform,color,text-shadow}
+.hero-title-word.accent{color:var(--gold)}
+@media(hover:hover) and (pointer:fine){
+  .hero-title-word:hover{animation:wordPulse .8s cubic-bezier(.22,.75,.25,1) both}
+  .hero-title-word.accent:hover{animation-name:wordPulseGold}
+}
+@keyframes wordPulse{0%,100%{color:#fff;transform:scale(1);text-shadow:0 4px 16px rgba(0,0,0,.42)}25%{color:#fff4a8;transform:scale(1.075);text-shadow:0 0 13px rgba(255,225,75,.8)}52%{color:#ffd24f;transform:scale(.965);text-shadow:0 0 6px rgba(255,198,47,.55)}76%{color:#fff078;transform:scale(1.035);text-shadow:0 0 10px rgba(255,219,74,.7)}}
+@keyframes wordPulseGold{0%,100%{color:var(--gold);transform:scale(1);text-shadow:0 4px 16px rgba(0,0,0,.42)}25%{color:#fff59c;transform:scale(1.075);text-shadow:0 0 14px rgba(255,237,92,.9)}52%{color:#f0a91f;transform:scale(.965);text-shadow:0 0 6px rgba(255,177,31,.6)}76%{color:#ffe66d;transform:scale(1.035);text-shadow:0 0 11px rgba(255,222,58,.8)}}
 .hero-copy{max-width:590px;color:#f5f8fb;font-size:1.13rem;line-height:1.65;text-shadow:0 3px 12px rgba(0,0,0,.55)}
 .social-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .social-pill{width:max-content;max-width:100%;display:grid;grid-template-columns:38px auto;column-gap:11px;align-items:center;padding:9px 16px 9px 9px;color:#fff;border:0;border-radius:999px;background:rgba(255,255,255,.17);box-shadow:0 10px 24px rgba(0,0,0,.14);backdrop-filter:blur(10px);transition:transform .2s ease,background .2s ease}
