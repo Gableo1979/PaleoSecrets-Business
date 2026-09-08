@@ -85,6 +85,16 @@ body{
 .explore-section{background:linear-gradient(135deg,#dcf8ee,#e2f7ff 54%,#fff8dc);border-top:1px solid #d4eee7;border-bottom:1px solid #d4eee7}
 .era-grid article,.resource,.story-grid article{border-radius:26px}
 .habitat-grid article{border-radius:28px;transition:transform .25s ease,box-shadow .25s ease}.habitat-grid article:hover{transform:translateY(-7px)}
+.section-heading h2{font-family:"Arial Black","Segoe UI Black","Trebuchet MS",sans-serif;font-weight:950;letter-spacing:-.055em;text-transform:uppercase}
+.era-grid article{min-height:0;aspect-ratio:3/2;padding:24px;overflow:hidden;color:#fff;border:1px solid #ffffff70;background-position:center;background-repeat:no-repeat;background-size:100% 100%;box-shadow:0 20px 42px #163d3530;isolation:isolate}
+.era-grid article.triasico{background-image:linear-gradient(180deg,#071a1605 20%,#071a16dc 100%),url('assets/scenes/era-triasico.jpg')}
+.era-grid article.jurasico{background-image:linear-gradient(180deg,#071a1605 20%,#071a16dc 100%),url('assets/scenes/era-jurasico.jpg')}
+.era-grid article.cretacico{background-image:linear-gradient(180deg,#071a1605 20%,#071a16dc 100%),url('assets/scenes/era-cretacico.jpg')}
+.era-grid article h3{margin:6px 0 4px;color:#fff;font-family:"Arial Black","Segoe UI Black","Trebuchet MS",sans-serif;font-size:clamp(1.65rem,3vw,2.35rem);font-weight:950;letter-spacing:-.045em;text-transform:uppercase;text-shadow:0 3px 16px #000}.era-grid article strong{width:max-content;padding:5px 9px;color:#142f2e;border-radius:999px;background:#f4cf59;font-size:.67rem;font-weight:950;letter-spacing:.1em}.era-grid article p{max-width:95%;margin:4px 0 0;color:#f3fffb;font-size:.83rem;line-height:1.4;text-shadow:0 2px 10px #000}
+.habitat-grid article{min-height:0;aspect-ratio:1/1;padding:22px;background-position:center;background-repeat:no-repeat;background-size:100% 100%;isolation:isolate}
+.habitat-grid .forest{background-color:#087f72;background-image:url('assets/scenes/habitat-bosque.jpg')}.habitat-grid .ocean{background-color:#1683ad;background-image:url('assets/scenes/habitat-oceano.jpg')}.habitat-grid .desert{background-color:#df8852;background-image:url('assets/scenes/habitat-desierto.jpg')}.habitat-grid .coast{background-color:#527f8c;background-image:url('assets/scenes/habitat-costa.jpg')}
+.habitat-grid article:before{z-index:-1;opacity:1;background:linear-gradient(180deg,#0619170b 28%,#061917e8 100%)}
+.habitat-grid article span{width:max-content;padding:5px 9px;color:#152e2d;border-radius:999px;background:#f4cf59;font:950 .72rem/1 "Segoe UI",sans-serif}.habitat-grid article h3{margin:8px 0 4px;color:#fff;font-family:"Arial Black","Segoe UI Black","Trebuchet MS",sans-serif;font-size:clamp(1.45rem,2.3vw,2rem);font-weight:950;letter-spacing:-.045em;text-transform:uppercase;text-shadow:0 3px 14px #000}.habitat-grid article p{color:#effff9;font-size:.78rem;text-shadow:0 2px 9px #000}
 .trust-strip{background:linear-gradient(90deg,#efffd9,#e0fbf1,#e1f7ff)}
 .dark-section{background:linear-gradient(145deg,#effff5,#edfaff 55%,#fffce9)}
 .club{background:linear-gradient(120deg,#f4cf59,#a9efd0 50%,#a6def5);border-radius:34px;margin:0 auto 70px;max-width:1280px}
