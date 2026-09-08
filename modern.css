@@ -126,3 +126,15 @@ footer{border:0;background:var(--navy)}.footer-grid{display:grid;grid-template-c
 @media(max-width:900px){.species-grid{grid-template-columns:repeat(2,1fr)}.era-grid{grid-template-columns:1fr}.habitat-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero-shade{background:rgba(7,16,27,.6)}}
 @media(max-width:580px){.wrap{width:min(100% - 26px,1240px)}.site-header .nav{min-height:74px}.logo-image{width:60px;height:60px}.logo{font-size:16px}.hero{min-height:690px;background-position:58% center}.hero h1{font-size:clamp(1.59rem,7.8vw,2.52rem)}.social-pills{display:grid}.social-pill{width:100%;border-radius:18px}.hero-actions .button{width:100%}.hero-facts{gap:18px}.section{padding-block:70px}.species-grid,.habitat-grid{grid-template-columns:1fr}.club{margin-inline:12px;border-radius:22px}.form-row{display:grid}.form-row input,.form-row .gold{border-radius:14px}.footer-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Selva envolvente solo para el catálogo de fichas; el Kit Paleo queda fuera. */
+#especies{
+  position:relative;
+  width:100%;
+  max-width:none;
+  padding-inline:max(20px,calc((100% - 1240px)/2));
+  background:
+    linear-gradient(180deg,rgba(8,25,28,.16),rgba(8,25,28,.78)),
+    url('assets/fichas-selva.jpg') center/cover no-repeat;
+  background-attachment:scroll;
+}
