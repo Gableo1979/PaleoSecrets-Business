@@ -144,3 +144,25 @@ footer{border:0;background:var(--navy)}.footer-grid{display:grid;grid-template-c
   height:145px;
   background:linear-gradient(180deg,rgba(8,14,20,0),rgba(7,21,25,.92));
 }
+
+/* Fichas tipo expedición: composición vertical, datos compactos y lectura cinematográfica. */
+#especies .species-grid{gap:18px}
+#especies .species-card{
+  aspect-ratio:.59/1;
+  min-height:500px;
+  padding:22px;
+  background-size:cover;
+  background-position:center;
+  border-color:rgba(255,255,255,.28);
+  border-radius:19px;
+  box-shadow:0 18px 32px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.06);
+}
+#especies .species-card:before{background:linear-gradient(180deg,rgba(5,14,21,.08) 18%,rgba(5,14,21,.12) 42%,rgba(5,14,21,.88) 76%,#050d13 100%)}
+#especies .species-card .dino-icon{display:none}
+#especies .species-card h3{margin-top:auto;margin-bottom:7px;color:#fff;font-family:"Oswald","Arial Narrow",sans-serif;font-size:clamp(1.5rem,2.2vw,2rem);font-weight:700;line-height:.95;letter-spacing:.01em;text-transform:uppercase;text-shadow:0 3px 12px rgba(0,0,0,.8)}
+#especies .species-card p{display:block;margin:0 0 13px;color:#e0bd61;font-size:.68rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;text-shadow:0 2px 8px #000}
+#especies .species-card .quick-facts{position:relative;padding-top:9px;border-top:1px solid rgba(255,255,255,.3);justify-content:space-between;gap:8px}
+#especies .species-card .quick-facts:before{content:"DIETA";position:absolute;transform:translateY(-20px);color:rgba(255,255,255,.62);font-size:.56rem;font-weight:800;letter-spacing:.1em}
+#especies .species-card .quick-facts span{font-size:.68rem;font-weight:700}
+#especies .species-card .text-link{margin-top:16px;padding:12px 10px;background:rgba(2,10,15,.55);border-color:rgba(224,189,97,.72);font-weight:900;letter-spacing:.08em}
+#especies .species-card .text-link:hover{background:rgba(224,189,97,.95)}
