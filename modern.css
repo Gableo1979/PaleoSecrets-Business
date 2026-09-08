@@ -134,7 +134,13 @@ footer{border:0;background:var(--navy)}.footer-grid{display:grid;grid-template-c
   max-width:none;
   padding-inline:max(20px,calc((100% - 1240px)/2));
   background:
-    linear-gradient(180deg,rgba(8,25,28,.16),rgba(8,25,28,.78)),
+    linear-gradient(180deg,rgba(7,21,25,.46),rgba(6,18,22,.88)),
     url('assets/fichas-selva.jpg') center/cover no-repeat;
   background-attachment:scroll;
+}
+
+/* Transición del hero a la selva: sin banda blanca y con continuidad de tono. */
+.hero:after{
+  height:145px;
+  background:linear-gradient(180deg,rgba(8,14,20,0),rgba(7,21,25,.92));
 }
