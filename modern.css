@@ -33,11 +33,18 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
 .kicker,.eyebrow{color:var(--coral);font-size:11px;font-weight:900;letter-spacing:.19em}
 .hero .kicker{color:#ffe17b}
 .hero h1{max-width:880px;margin:20px 0;font-family:"Oswald","Arial Narrow",sans-serif;font-size:clamp(1.72rem,3.4vw,3.25rem);font-weight:600;line-height:.96;letter-spacing:.018em;text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 16px rgba(0,0,0,.42)}
-.hero-title-row{display:block;color:#fff}
-.hero-title-word{display:inline-block;color:#fff;font-style:normal;transform-origin:left center;will-change:transform,color;transition:transform .28s cubic-bezier(.2,.8,.2,1),color .28s ease,text-shadow .28s ease}
-.hero-title-word.accent{color:#fff}
+.hero h1 .hero-title-row{display:block;color:#fff!important}
+.hero h1 .hero-title-word,.hero h1 .hero-title-word.accent{display:inline-block;color:#fff!important;font-style:normal;transform-origin:left center;will-change:transform,color,text-shadow;transition:transform .52s cubic-bezier(.22,.8,.24,1),color .52s ease,text-shadow .52s ease}
 @media(hover:hover) and (pointer:fine){
-  .hero-title-word:hover{color:#b88925;transform:scale(1.08);text-shadow:0 2px 12px rgba(255,211,91,.28)}
+  .hero h1 .hero-title-word:hover{animation:wordHover 1.15s cubic-bezier(.22,.8,.24,1) forwards}
+}
+@keyframes wordHover{
+  0%{color:#fff;transform:scale(1);text-shadow:0 4px 16px rgba(0,0,0,.42)}
+  19%{color:#bd9a4f;transform:scale(1.075);text-shadow:0 2px 13px rgba(224,193,111,.35)}
+  43%{color:#e0c477;transform:scale(1.018);text-shadow:0 2px 16px rgba(239,214,143,.52)}
+  68%{color:#f1dda2;transform:scale(1.105);text-shadow:0 0 12px rgba(241,221,162,.6)}
+  84%{color:#d0ad5c;transform:scale(1.045);text-shadow:0 2px 13px rgba(224,193,111,.42)}
+  100%{color:#c7a451;transform:scale(1.08);text-shadow:0 2px 12px rgba(224,193,111,.28)}
 }
 .hero-copy{max-width:590px;color:#f5f8fb;font-size:1.13rem;line-height:1.65;text-shadow:0 3px 12px rgba(0,0,0,.55)}
 .social-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
