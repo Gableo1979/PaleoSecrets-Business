@@ -26,6 +26,7 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
 .nav-cta{padding:12px 18px;color:var(--navy)!important;border:0;border-radius:999px;background:var(--gold);box-shadow:0 9px 24px rgba(211,160,29,.25)}
 
 .hero{position:relative;min-height:calc(100vh - 90px);overflow:hidden;display:flex;align-items:center;color:#fff;background:#3d2e24 url('assets/hero-excavacion-paleontologica.png') center/cover no-repeat}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;pointer-events:none}
 .hero-shade{z-index:1;background:linear-gradient(90deg,rgba(8,14,20,.66) 0%,rgba(8,14,20,.38) 38%,rgba(8,14,20,.04) 72%),linear-gradient(0deg,rgba(8,14,20,.25),transparent 45%)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:110px;z-index:1;background:linear-gradient(transparent,var(--cream));pointer-events:none}
 .hero-content{position:relative;z-index:2;padding-block:70px 100px}
