@@ -52,6 +52,9 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
   45%{color:#ead795;transform:scale(1.035)}
   100%{color:#fff;transform:scale(1);text-shadow:0 4px 16px rgba(0,0,0,.42)}
 }
+/* Fallback directo: funciona aunque el navegador no evalúe la media de hover. */
+.hero h1 .hero-title-word.is-hovered{animation:wordHover 1.15s cubic-bezier(.22,.8,.24,1) forwards}
+.hero h1 .hero-title-word.is-returning{animation:wordReturn .52s cubic-bezier(.22,.8,.24,1) forwards}
 .hero-copy{max-width:590px;color:#f5f8fb;font-size:1.13rem;line-height:1.65;text-shadow:0 3px 12px rgba(0,0,0,.55)}
 .social-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .social-pill{width:max-content;max-width:100%;display:grid;grid-template-columns:38px auto;column-gap:11px;align-items:center;padding:9px 16px 9px 9px;color:#fff;border:0;border-radius:999px;background:rgba(255,255,255,.17);box-shadow:0 10px 24px rgba(0,0,0,.14);backdrop-filter:blur(10px);transition:transform .2s ease,background .2s ease}
