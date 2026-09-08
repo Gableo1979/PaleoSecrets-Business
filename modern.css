@@ -25,13 +25,13 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
 .nav-links a:hover{color:var(--coral);transform:translateY(-2px)}
 .nav-cta{padding:12px 18px;color:var(--navy)!important;border:0;border-radius:999px;background:var(--gold);box-shadow:0 9px 24px rgba(211,160,29,.25)}
 
-.hero{position:relative;min-height:calc(100vh - 90px);overflow:hidden;display:flex;align-items:center;color:#fff;background:radial-gradient(circle at 82% 28%,rgba(245,200,76,.3),transparent 22%),radial-gradient(circle at 72% 72%,rgba(38,120,201,.38),transparent 30%),linear-gradient(135deg,#0c2035 0%,#173c60 55%,#8b573d 100%)}
-.hero-shade{z-index:1;background:linear-gradient(90deg,rgba(7,16,27,.4),rgba(7,16,27,.08) 72%)}
+.hero{position:relative;min-height:calc(100vh - 90px);overflow:hidden;display:flex;align-items:center;color:#fff;background:#3d2e24 url('assets/hero-excavacion-paleontologica.png') center/cover no-repeat}
+.hero-shade{z-index:1;background:linear-gradient(90deg,rgba(8,14,20,.66) 0%,rgba(8,14,20,.38) 38%,rgba(8,14,20,.04) 72%),linear-gradient(0deg,rgba(8,14,20,.25),transparent 45%)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:110px;z-index:1;background:linear-gradient(transparent,var(--cream));pointer-events:none}
 .hero-content{position:relative;z-index:2;padding-block:70px 100px}
 .kicker,.eyebrow{color:var(--coral);font-size:11px;font-weight:900;letter-spacing:.19em}
 .hero .kicker{color:#ffe17b}
-.hero h1{max-width:880px;margin:20px 0;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(1.86rem,3.7vw,3.55rem);font-weight:900;line-height:.92;letter-spacing:.012em;text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 16px rgba(0,0,0,.42)}
+.hero h1{max-width:880px;margin:20px 0;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(1.62rem,3.21vw,3.09rem);font-weight:900;line-height:.94;letter-spacing:.012em;text-transform:uppercase;text-wrap:balance;text-shadow:0 4px 16px rgba(0,0,0,.42)}
 .hero h1 span{display:block;color:var(--gold);font-style:normal}
 .hero-copy{max-width:590px;color:#f5f8fb;font-size:1.13rem;line-height:1.65;text-shadow:0 3px 12px rgba(0,0,0,.55)}
 .social-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
@@ -102,5 +102,5 @@ footer{border:0;background:var(--navy)}.footer-grid{display:grid;grid-template-c
 
 *:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
 @media(max-width:900px){.species-grid{grid-template-columns:repeat(2,1fr)}.era-grid{grid-template-columns:1fr}.habitat-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero-shade{background:rgba(7,16,27,.6)}}
-@media(max-width:580px){.wrap{width:min(100% - 26px,1240px)}.site-header .nav{min-height:74px}.logo-image{width:60px;height:60px}.logo{font-size:16px}.hero{min-height:690px}.hero h1{font-size:clamp(1.83rem,9vw,2.9rem)}.social-pills{display:grid}.social-pill{width:100%;border-radius:18px}.hero-actions .button{width:100%}.hero-facts{gap:18px}.section{padding-block:70px}.species-grid,.habitat-grid{grid-template-columns:1fr}.club{margin-inline:12px;border-radius:22px}.form-row{display:grid}.form-row input,.form-row .gold{border-radius:14px}.footer-grid{grid-template-columns:1fr}}
+@media(max-width:580px){.wrap{width:min(100% - 26px,1240px)}.site-header .nav{min-height:74px}.logo-image{width:60px;height:60px}.logo{font-size:16px}.hero{min-height:690px;background-position:58% center}.hero h1{font-size:clamp(1.59rem,7.8vw,2.52rem)}.social-pills{display:grid}.social-pill{width:100%;border-radius:18px}.hero-actions .button{width:100%}.hero-facts{gap:18px}.section{padding-block:70px}.species-grid,.habitat-grid{grid-template-columns:1fr}.club{margin-inline:12px;border-radius:22px}.form-row{display:grid}.form-row input,.form-row .gold{border-radius:14px}.footer-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
