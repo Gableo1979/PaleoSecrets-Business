@@ -25,18 +25,14 @@ body{color:var(--ink);background:var(--cream);font-family:"Segoe UI",Inter,syste
 .nav-links a:hover{color:var(--coral);transform:translateY(-2px)}
 .nav-cta{padding:12px 18px;color:var(--navy)!important;border:0;border-radius:999px;background:var(--gold);box-shadow:0 9px 24px rgba(211,160,29,.25)}
 
-.hero{position:relative;min-height:calc(100vh - 90px);overflow:hidden;display:flex;align-items:center;color:#fff;background:#14181d}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;pointer-events:none}
-.hero-shade{z-index:1;background:linear-gradient(90deg,rgba(7,16,27,.84) 0%,rgba(10,23,37,.64) 42%,rgba(9,17,27,.1) 76%),linear-gradient(0deg,rgba(6,13,21,.52),transparent 45%)}
+.hero{position:relative;min-height:calc(100vh - 90px);overflow:hidden;display:flex;align-items:center;color:#fff;background:radial-gradient(circle at 82% 28%,rgba(245,200,76,.3),transparent 22%),radial-gradient(circle at 72% 72%,rgba(38,120,201,.38),transparent 30%),linear-gradient(135deg,#0c2035 0%,#173c60 55%,#8b573d 100%)}
+.hero-shade{z-index:1;background:linear-gradient(90deg,rgba(7,16,27,.4),rgba(7,16,27,.08) 72%)}
 .hero:after{content:"";position:absolute;inset:auto 0 0;height:110px;z-index:1;background:linear-gradient(transparent,var(--cream));pointer-events:none}
 .hero-content{position:relative;z-index:2;padding-block:70px 100px}
 .kicker,.eyebrow{color:var(--coral);font-size:11px;font-weight:900;letter-spacing:.19em}
 .hero .kicker{color:#ffe17b}
 .hero h1{max-width:760px;margin:20px 0;font-family:"Arial Black","Segoe UI Black",sans-serif;font-size:clamp(3rem,6.8vw,6.2rem);font-weight:950;line-height:.91;letter-spacing:-.055em;text-transform:uppercase;text-wrap:balance;text-shadow:0 6px 28px rgba(0,0,0,.42)}
-.hero h1 .hero-title-line{display:block;width:max-content;max-width:100%;color:#fff;font-style:normal;transform-origin:left center;transition:color .28s ease,transform .28s cubic-bezier(.2,.8,.2,1),text-shadow .28s ease;cursor:default}
-.hero h1 .hero-title-line.accent{color:var(--gold)}
-.hero h1 .hero-title-line:hover{color:#fff8dc;transform:translateX(9px) scale(1.018);text-shadow:0 0 7px rgba(255,255,255,.85),0 0 20px rgba(90,186,255,.7),0 6px 28px rgba(0,0,0,.48)}
-.hero h1 .hero-title-line.accent:hover{color:#ffe477;text-shadow:0 0 7px rgba(255,232,144,.95),0 0 23px rgba(245,200,76,.82),0 6px 28px rgba(0,0,0,.48)}
+.hero h1 span{display:block;color:var(--gold);font-style:normal}
 .hero-copy{max-width:590px;color:#f5f8fb;font-size:1.13rem;line-height:1.65;text-shadow:0 3px 12px rgba(0,0,0,.55)}
 .social-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .social-pill{width:max-content;max-width:100%;display:grid;grid-template-columns:38px auto;column-gap:11px;align-items:center;padding:9px 16px 9px 9px;color:#fff;border:0;border-radius:999px;background:rgba(255,255,255,.17);box-shadow:0 10px 24px rgba(0,0,0,.14);backdrop-filter:blur(10px);transition:transform .2s ease,background .2s ease}
